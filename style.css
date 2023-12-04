@@ -1435,6 +1435,14 @@ label {
         left: 11vw;
     }
 
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset,15px);
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset,15px);
+    }
+
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,1350vw);
     }
@@ -1526,7 +1534,7 @@ label {
     }
 
     .join-btn {
-        top: 1065vh;
+        top: 1755vw;
         right: 14vw;
         padding: 10px 20px;
         font-size: 1rem;
@@ -1548,44 +1556,54 @@ label {
     }
 
     .search-btn {
-        top: 67vh;
+        top: 116vw;
         left: 63vw;
     }
 
     .search {
-        top: 68vh;
+        top: 118vw;
         left: 12vw;
     }
 
+    .kovichki {
+        height: 142vw;
+    }
+
     .swiper-button-next, .swiper-button-prev {
-        top: var(--swiper-navigation-top-offset,940vh);
+        top: var(--swiper-navigation-top-offset,1630vw);
     }
 
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-        top: var(--swiper-pagination-top,987vh);
+        top: var(--swiper-pagination-top,1715vw);
     }
 
     .join-btn {
-        top: 1067.5vh;
+        top: 1840.5vw;
         right: 12vw;
     }
 }
 
 @media screen and (max-width:400px) {
     .search {
+        top: 127vw;
         left: 10vw;
     }
 
     .search-btn {
+        top: 125vw;
         left: 65vw;
     }
     
     .swiper-button-next, .swiper-button-prev {
-        top: var(--swiper-navigation-top-offset,935vh);
+        top: var(--swiper-navigation-top-offset,1740vw);
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: var(--swiper-pagination-top,1835vw);
     }
 
     .join-btn {
-        top: 1063vh;
+        top: 1969.5vw;
         right: 10vw;
     }
 }
@@ -1613,12 +1631,12 @@ label {
     }
 
     .search {
-        top: 65vh;
+        top: 130vw;
     }
 
     .search-btn {
+        top: 128vw;
         left: 64vw;
-        top: 64vh;
         font-size: 0.9rem;
     }
 
@@ -1646,16 +1664,12 @@ label {
         max-width: 250px;
     }
 
-    .swiper-button-prev, .swiper-rtl .swiper-button-next {
-        left: var(--swiper-navigation-sides-offset,15px);
-    }
-
-    .swiper-button-next, .swiper-rtl .swiper-button-prev {
-        right: var(--swiper-navigation-sides-offset,15px);
+    .swiper-button-next, .swiper-button-prev {
+        top: var(--swiper-navigation-top-offset,1870vw);
     }
 
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-        top: var(--swiper-pagination-top,980vh);
+        top: var(--swiper-pagination-top,1965vw);
     }
 
     .join {
@@ -1668,17 +1682,50 @@ label {
     }
 
     .join-btn {
-        top: 1054vh;
+        top: 2111.5vw;
         right: 12vw;
         font-size: 0.9rem;
     }
 }
 @media screen and (max-width:350px) {
+    .search {
+        top: 137vw;
+    }
+    
+    .search-btn {
+        top: 135vw;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: var(--swiper-navigation-top-offset,1970vw);
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: var(--swiper-pagination-top,2075vw);
+    }
+
     .join-btn {
-        top: 1050vh;
+        top: 2225.5vw;
     }
 }
 @media screen and (max-width:320px) {
+    .search-btn {
+        top: 148vw;
+    }
+
+    .search {
+        top: 151vw;
+        left: 5vw;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: var(--swiper-navigation-top-offset,2130vw);
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        top: var(--swiper-pagination-top,2255vw);
+    }
+   
     .join-btn {
         top: 1046vh;
         right: 7vw;
