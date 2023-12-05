@@ -1585,13 +1585,15 @@ label {
 
 @media screen and (max-width:400px) {
     .search {
-        top: 127vw;
-        left: 10vw;
+        top: 13vw;
+        left: -37vw;
+        position: relative;
     }
 
     .search-btn {
-        top: 125vw;
-        left: 65vw;
+        top: -15vw;
+        left: 27vw;
+        position: relative;
     }
     
     .swiper-button-next, .swiper-button-prev {
