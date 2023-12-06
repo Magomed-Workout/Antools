@@ -1419,6 +1419,15 @@ label {
 }
 
 @media screen and (max-width:400px) {
+    .search-btn {
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .input-1, .input-2 {
+        width: 210px;
+    }
+
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,1740vw);
     }
