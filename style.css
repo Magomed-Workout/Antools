@@ -170,29 +170,51 @@ nav ul ul li {
 .form {
     font-size: 1.25rem;
     margin-bottom: 100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.10);
+    background-color: #283036;
+    border-radius: 20px;
+    width: 700px;
+}
+
+.search-img {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
 
 .search {
-    position: relative;
-    left: -30.3vw;
+    margin-left: 30px;
+    margin-top: 6px;
 }
 
 .input-1 {
-    background-color: #283036;
-    border: 1.5px solid rgba(255, 255, 255, 0.10);
-    padding: 25px 55px;
-    width: 600px;
+    border: none;
     border-radius: 20px;
+    background-color: #283036;
+    padding: 25px;
+    width: 600px;
     color: #fff;
+    outline: none;
+}
+
+.input-2 {
+    border: none;
+    border-radius: 20px;
+    background-color: #283036;
+    padding: 25px;
+    width: 600px;
+    color: #fff;
+    outline: none;
 }
 
 .search-btn {
-    position: relative;
-    top: -3.6vw;
-    left: 22.5vw;
+    margin-right: 20px;
     border: none;
     border-radius: 10px;
-    padding: 13px 37px;
+    padding: 13px 35px;
     background-color: #FF6E30;
     font-weight: 600;
     color: #fff;
@@ -332,8 +354,6 @@ nav ul ul li {
 .tools-blocks:hover #invision-icon {
     opacity: 1;
 }
-
-
 
 .tools-description {
     margin-bottom: 40px;
@@ -605,23 +625,14 @@ label {
     margin-bottom: 100px;
 }
 
-.input-2 {
-    width: 600px;
-    border-radius: 15px;
-    border: 1.5px solid rgba(255, 255, 255, 0.10);
-    padding: 25px;
-    background-color: #283036;
-}
-
 .join-btn {
-    position: relative;
-    top: -3.6vw;
-    right: -11vw;
+    margin-right: 20px;
+    width: 170px;
     border: none;
     font-weight: 600;
     border-radius: 10px;
     color: #fff;
-    padding: 15px 40px;
+    padding: 15px 25px;
     background-color: #FF6E30;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
@@ -683,15 +694,6 @@ label {
         right: -6vw;
     }
 
-    .search {
-        left: -36.3vw;
-    }
-
-    .search-btn {
-        top: -4.4vw;
-        left: 27.5vw;
-    }
-
     .section-tools {
         max-width: 1300px;
     }
@@ -729,26 +731,12 @@ label {
         height: 24vw;
     }
 
-    .join-btn {
-        top: -4.5vw;
-        right: -13vw;
-    }
-
     .footer {
         max-width: 1400px;
     }
 }
 
 @media screen and (max-width:1440px) {
-    .search {
-        left: -40.3vw;
-    }
-    
-    .search-btn {
-        top: -4.7vw;
-        left: 30vw;
-    }
-
     .section-right {
         height: 40vw;
     }
@@ -772,11 +760,6 @@ label {
     .swiper-button-prev, .swiper-rtl .swiper-button-next {
         left: var(--swiper-navigation-sides-offset,50px);
     }
-
-    .join-btn {
-        top: -5vw;
-        right: -14vw;
-    }
 }
 
 @media screen and (max-width:1366px) {
@@ -784,21 +767,24 @@ label {
         max-width: 1100px;
     }
 
-    .input-1 {
+    .section-left {
+        max-width: 650px;
+    }
+
+    .title-newcomer, .join-title, .title-sect-tools, .title {
+        font-size: 3.5rem;
+    }
+
+    .form {
+        width: 630px;
+    }
+
+    .input-1, .input-2 {
         width: 500px;
     }
 
-    .search-btn {
-        top: -5.1vw;
-        left: 25vw;
-    }
-
-    .search {
-        left: -35.3vw;
-    }
-
     .section-right {
-        right: -5vw;
+        right: -3vw;
     }
 
     .section-tools {
@@ -844,11 +830,6 @@ label {
         top: var(--swiper-navigation-top-offset,330vw);
     }
 
-    .join-btn {
-        top: -5.3vw;
-        right: -15vw;
-    }
-
     .creator-info {
         max-width: 700px;
         padding-right: 100px;
@@ -865,10 +846,6 @@ label {
         margin: 25px 100px;
     }
 
-    .title {
-        font-size: 3.15rem;
-    }
-
     .section-right {
         right: -3vw;
     }
@@ -881,31 +858,9 @@ label {
     .buttons {
         font-size: 1.15rem;
     }
-    
-    .search-btn {
-        top: -5.5vw;
-        left: 27vw;
-    }
-
-    .search {
-        left: -37.5vw;
-    }
-
-    .title-newcomer {
-        font-size: 3.15rem;
-    }
 
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,340vw);
-    }
-
-    .join-btn {
-        top: -5.5vw;
-        right: -16vw;
-    }
-
-    .join-title {
-        font-size: 2.7rem;
     }
     
     .footer {
@@ -914,34 +869,41 @@ label {
 }
 
 @media screen and (max-width:1176px) {
+    .header {
+        margin: 25px 30px;
+    }
+
+    .sign-btn {
+        padding: 13px 25px;
+    }
+
     .main-section {
         max-width: 950px;
     }
 
-    .title {
-        font-size: 2.7rem;
+    .form {
+        width: 500px;
+    }
+
+    .search {
+        margin-left: 15px;
+    }
+
+    .search-btn {
+        margin-right: 10px;
+        padding: 13px 30px;
+    }
+
+    .input-1 {
+        padding: 25px 15px;
+    }
+
+    .title-newcomer, .join-title, .title-sect-tools, .title {
+        font-size: 2.8rem;
     }
 
     .section-left {
         max-width: 500px;
-    }
-
-    .search-btn {
-        top: -6vw;
-        left: 26vw;
-    }
-
-    .search {
-        top: -6vw;
-        left: 2vw;
-    }
-
-    .title-sect-tools {
-        font-size: 2.7rem;
-    }
-
-    .title-newcomer {
-        font-size:  2.7rem;
     }
 
     .brand-section {
@@ -957,8 +919,7 @@ label {
     }
 
     .join-btn {
-        top: -6.1vw;
-        right: -18vw;
+        margin-right: 10px;
     }
 
     .footer {
@@ -968,14 +929,6 @@ label {
 
     .company-info {
         margin-top: 50px;
-    }
-
-    .header {
-        margin: 25px 30px;
-    }
-
-    .sign-btn {
-        padding: 13px 25px;
     }
 }
 
@@ -1002,18 +955,12 @@ label {
         max-width: 700px;
     }
 
-    .input-1 {
+    .form {
         width: 600px;
     }
 
-    .search-btn {
-        top: -7vw;
-        left: 19vw;
-    }
-
-    .search {
-        top: 0vw;
-        left: -57vw;
+    .input-1, .input-2 {
+        width: 600px;
     }
 
     .social-networks {
@@ -1060,11 +1007,6 @@ label {
         top: var(--swiper-navigation-top-offset,520vw);
     }
 
-    .join-btn {
-        top: -7vw;
-        right: -20vw;
-    }
-
     .footer {
         max-width: 850px
     }
@@ -1104,15 +1046,6 @@ label {
         padding: 10px 0;
         text-align: end;
     }
-    
-    .search-btn {
-        top: -7.5vw;
-        left: 22vw;
-    }
-
-    .search {
-        left: -65vw;
-    }
 
     .buttons {
         display: none;
@@ -1150,13 +1083,7 @@ label {
     }
 
     .join-btn {
-        top: -7.7vw;
-        right: -19vw;
         padding: 13px 35px;
-    }
-
-    .input-2 {
-        width: 500px;
     }
 
     .footer {
@@ -1177,19 +1104,12 @@ label {
         max-width: 500px;
     }
 
-    .input-1 {
+    .form {
         width: 500px;
     }
 
-    .search-btn {
-        top: -8.5vw;
-        left: 21vw;
-        padding: 10px 30px;
-    }
-
-    .search {
-        top: -9vw;
-        left: -20vw;
+    .input-1, .input-2 {
+        width: 500px;
     }
 
     .section-right {
@@ -1241,8 +1161,6 @@ label {
     }
 
     .join-btn {
-        top: -8.7vw;
-        right: -22vw;
         padding: 10px 30px;
     }
 
@@ -1284,24 +1202,28 @@ label {
         font-size: 1.15rem;
     }
 
-    .search {
-        top: -10.5vw;
-        left: -23vw;
+    .form {
+        width: 400px;
+        font-size: 1.1rem;
     }
 
-    .form {
-        font-size: 1.1rem;
+    .search {
+        margin-left: 5px;
     }
 
     .input-1 {
         width: 400px;
-        padding: 25px 30px;
+        padding: 25px 10px;
         font-size: 1rem;
     }
 
-    .search-btn {
-        top: -11vw;
-        padding: 10px 25px;
+    .input-2 {
+        max-width: 400px;
+        font-size: 1rem;
+    }
+
+    .join-btn {
+        padding: 10px 20px;
     }
 
     .section-tools {
@@ -1368,31 +1290,12 @@ label {
         max-width: 400px;
     }
 
-    .input-2 {
-        max-width: 400px;
-    }
-
-    .join-btn {
-        top: -11.5vw;
-        right: -23vw;
-    }
-
     .footer {
         max-width: 200px;
     }
 }
 
 @media screen and (max-width:500px) {
-    .search-btn {
-        top: -12vw;
-        left: 24vw;
-    }
-
-    .search {
-        top: -11.5vw;
-        left: -25vw;
-    }
-
     .swiper-button-prev, .swiper-rtl .swiper-button-next {
         left: var(--swiper-navigation-sides-offset,15px);
     }
@@ -1404,11 +1307,6 @@ label {
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,1350vw);
     }
-
-    .join-btn {
-        top: -12.5vw;
-        right: -25vw;
-    }
 }
 @media screen and (max-width:450px) {
     .main-section {
@@ -1419,19 +1317,26 @@ label {
         max-width: 370px;
     }
 
-    .input-1 {
-        width: 370px;
-    }
-    
-    .search-btn {
-        top: -14vw;
+    .description, .description-sect-tools, .description-newcomer, .join-description {
         font-size: 1rem;
-        padding: 10px 20px;
     }
 
-    .search {
-        top: -12.5vw;
-        left: -26vw;
+    .form {
+        width: 370px;
+    }
+
+    .input-1, .input-2   {
+        width: 370px;
+    }
+
+    .input-1 {
+        padding: 25px 10px 25px 0;
+    }
+
+    .search-btn {
+        margin-right: 10px;
+        padding: 13px 20px;
+        font-size: 1rem;
     }
 
     .section-right {
@@ -1476,17 +1381,6 @@ label {
     .join {
         max-width: 350px;
     }
-
-    .input-2 {
-        max-width: 350px;
-        font-size: 1rem;
-    }
-
-    .join-btn {
-        top: -13.5vw;
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
 }
 
 @media screen and (max-width:430px) {
@@ -1498,17 +1392,21 @@ label {
         max-width: 350px;
     }
 
-    .input-1 {
+    .form {
+        width: 350px;
+    }
+
+    .input {
         width: 330px;
         font-size: 0.9rem;
     }
 
     .search-btn {
-        left: 22vw;
+        padding: 10px 15px;
     }
 
-    .search {
-        left: -23vw;
+    .join-btn {
+        padding: 10px;
     }
 
     .kovichki {
@@ -1518,31 +1416,11 @@ label {
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,1630vw);
     }
-
-    .join-btn {
-        top: -14.5vw;
-        right: -27vw;
-    }
 }
 
 @media screen and (max-width:400px) {
-    .search {
-        top: -13.5vw;
-        left: -24vw;
-    }
-
-    .search-btn {
-        top: -15vw;
-        position: relative;
-    }
-    
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,1740vw);
-    }
-
-    .join-btn {
-        top: -15.5vw;
-        right: -28vw;
     }
 }
 
@@ -1559,17 +1437,20 @@ label {
         font-size: 1.7rem;
     }
 
-    .description, .description-sect-tools, .description-newcomer, .join-description {
-        font-size: 1rem;
-    }
-
-    .input-1 {
+    .form {
         width: 300px;
         font-size: 0.8rem;
     }
 
-    .search-btn {
-        font-size: 0.9rem;
+    .input-1, .input-2 {
+        width: 300px;
+        font-size: 0.8rem;
+    }
+
+    .search {
+        margin-left: 5px;
+        width: 20px;
+        margin-top: 0;
     }
 
     .section-tools {
@@ -1603,51 +1484,31 @@ label {
     .join {
         max-width: 300px;
     }
-
-    .input-2 {
-        max-width: 300px;
-        font-size: 0.9rem;
-    }
-
-    .join-btn {
-        right: -26vw;
-        font-size: 0.9rem;
-    }
 }
 @media screen and (max-width:350px) {
-    .search {
-        top: -14.5vw;
-    }
-    
-    .search-btn {
-        top: -16vw;
-    }
-
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,1970vw);
     }
-
-    .join-btn {
-        top: -16.3vw;
-    }
 }
 @media screen and (max-width:320px) {
-    .search-btn {
-        top: -18vw;
-        left: 25vw;
+    .form {
+        width: 300px;
+        font-size: 0.9rem;
     }
 
     .search {
-        top: -15.5vw;
-        left: -26vw;
+        margin-left: 0;
+    }
+
+    .input {
+        padding: 25px 5px;
+    }
+
+    .search-btn {
+        padding: 10px 15px;
     }
 
     .swiper-button-next, .swiper-button-prev {
         top: var(--swiper-navigation-top-offset,2130vw);
-    }
-
-    .join-btn {
-        top: -18.3vw;
-        right: -28vw;
     }
 }
