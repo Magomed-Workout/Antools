@@ -16,7 +16,7 @@ let mySwiper = new Swiper(slider, {
         clickable: true,
     },
     autoplay: {
-        delay: 3000000,
+        delay: 3000,
     },
 }); 
 
